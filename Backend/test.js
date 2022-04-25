@@ -1,9 +1,7 @@
 const { expect } = require("chai");
 const chai = require("chai");
-const chaiHttp = require("chai-http");
 const app = require("./server");
-
-chai.use(chaiHttp);
+chai.use(require("chai-http"));
 
 const allRecipes = {
   recipeNames: ["scrambledEggs", "garlicPasta", "chai"],
